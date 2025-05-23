@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="gift-box">
+            <div class="lid" id="lid">
+                <div class="bow"></div>
+            </div>
+            <div class="ribbon-horizontal"></div>
+            <div class="ribbon-vertical"></div>
+            <div class="envelope" id="envelope">Happy Birthday 🎉🎂🎁</div>
+        </div>
+        <div class="gift-box" onclick="openGift()">
+            <div class="lid" id="lid">
+                <div class="bow"></div>
+            </div>
+            <div class="ribbon-horizontal"></div>
+            <div class="ribbon-vertical"></div>
+            <div class="envelope" id="envelope">Happy Birthday 🎉🎂🎁</div>
+        </div>
+        <div class="gift-box">
+            <div class="lid" id="lid">
+                <div class="bow"></div>
+            </div>
+            <div class="ribbon-horizontal"></div>
+            <div class="ribbon-vertical"></div>
+            <div class="envelope" id="envelope">Happy Birthday 🎉🎂🎁</div>
+        </div>
+    </div>
+    <script>
+        function openGift() {
+            document.getElementById('lid').classList.toggle('open');
+            document.getElementById('envelope').classList.toggle('show');
+        }
+    </script>
+</body>
+</html>
